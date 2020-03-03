@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="110dp"/>
+    <TextView
+        android:id="@+id/loginform"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="105dp"
+        android:layout_marginTop="1dp"
+        android:textColor="@android:color/holo_blue_bright"
+        android:text="User loin form"
+        android:textSize="20dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/usernameid"
+            android:layout_marginRight="20dp"
+            android:textColor="#771345"
+            android:textSize="18sp"
+            android:layout_marginLeft="5dp"
+            android:text="UserName:"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_nameedit"
+            android:textSize="16sp"
+            android:layout_marginRight="15dp"
+            android:background="@android:color/white"
+            android:textColor="#771345"
+            android:hint="Enter username here"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/userpasssid"
+            android:textSize="16sp"
+            android:textColor="#771345"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="20dp"
+            android:text="Passsword:"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_passedit"
+            android:textColor="#771345"
+            android:layout_marginRight="15dp"
+            android:background="@android:color/white"
+            android:textSize="18sp"
+            android:hint="Enter passsword here"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/login"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="130dp"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        android:text="Login"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/creat_account"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:hint="Regiseter"
+        android:textSize="28sp"
+        android:textColor="@android:color/white" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/forgetpass"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="90dp"
+        android:textColor="@android:color/holo_red_dark"
+        android:text="Forget password"/>
+
+</LinearLayout>
